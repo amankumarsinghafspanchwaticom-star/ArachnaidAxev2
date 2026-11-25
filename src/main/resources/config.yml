@@ -1,0 +1,74 @@
+weapon:
+  name: "<dark_red><bold>ARACHNAID AXE</bold></dark_red>"
+  custom-model-data: "arachnaid_axe"
+  lore:
+    - "<gray>Crouch + Right-Click looking down: <white>Spider Web</white></gray>"
+    - "<gray>Double Right-Click a wall: <white>Spider Wall Crawl</white></gray>"
+    - "<dark_gray>Controls: W/S Up-Down | A/D Left-Right | Space/Shift Detach</dark_gray>"
+    - "<dark_gray>Unique Craft | Indestructible Drop | Cannot be enchanted</dark_gray>"
+
+resource-pack:
+  enabled: true
+  use-built-in-host: true
+  public-host: ""
+  port: 25580
+  custom-url: ""
+  required: false
+  prompt: "<dark_red><bold>Arachnaid Axe</bold></dark_red> <gray>Custom weapon texture pack</gray>"
+
+crafting:
+  enabled: true
+  broadcast-on-unlock: true
+  broadcast-on-craft: true
+  broadcast-on-wielder-change: true
+  shape:
+    - "WCW"
+    - "CAC"
+    - "WFW"
+  ingredients:
+    W: COBWEB
+    C: FERMENTED_SPIDER_EYE
+    A: NETHERITE_AXE
+    F: NETHERITE_INGOT
+
+spider-web:
+  cooldown-seconds: 120
+  range-half-width: 4.0
+  range-vertical: 4.0
+  min-look-down-pitch: 45.0
+  max-ground-search-depth: 5
+  consume-cooldown-on-miss: false
+  target-creative: false
+
+wall-climb:
+  double-click-window-ms: 400
+  max-wall-aim-distance: 3.0
+  wall-attach-distance: 0.95
+  crawl-pose: true
+  climb-up-speed: 0.22
+  climb-down-speed: 0.22
+  strafe-speed: 0.19
+  wall-hug-force: 0.06
+  jump-off-push: 0.34
+  jump-off-upward: 0.36
+  cancel-grace-ms: 180
+
+special-webs:
+  drop-items-on-break: false
+  creative-admin-can-break: true
+
+messages:
+  prefix: "<dark_red>[Arachnaid]</dark_red> "
+  no-permission: "<red>You don't have permission to do that.</red>"
+  web-on-cooldown: "<red>Spider Web is on cooldown: <white>{time}s</white> remaining.</red>"
+  web-no-targets: "<gray>No eligible players on solid ground in 8x8 range.</gray>"
+  web-activated: "<green>Spider Web triggered on <white>{count}</white> player(s)!</green>"
+  web-protected: "<red>Special webs can only be broken with Shears or Water!</red>"
+  climb-start: "<green>Wall Crawl ON</green> <dark_gray>|</dark_gray> <white>W/S</white> <gray>Up/Down</gray> <dark_gray>|</dark_gray> <white>A/D</white> <gray>Left/Right</gray> <dark_gray>|</dark_gray> <yellow>Space/Shift</yellow> <gray>Detach</gray>"
+  climb-stop: "<gray>Wall Crawl ended.</gray>"
+  climb-cancelled: "<yellow>Detached from wall.</yellow>"
+  enchant-blocked: "<red>The ARACHNAID AXE cannot be enchanted.</red>"
+  craft-locked: "<red>The ARACHNAID AXE has already been crafted! Nobody else can craft it.</red>"
+  craft-unlocked-broadcast: "<yellow>The <dark_red><bold>ARACHNAID AXE</bold></dark_red> <yellow>was lost ({reason})! Its crafting recipe is unlocked again.</yellow>"
+  craft-claimed-broadcast: "<green><white>{player}</white> has crafted the <dark_red><bold>ARACHNAID AXE</bold></dark_red><green>! Nobody else can craft it now.</green>"
+  wielder-changed-broadcast: "<gold>Now <dark_red><bold>ARACHNAID AXE</bold></dark_red> <gold>is wielded by <white>{player}</white>!</gold>"
